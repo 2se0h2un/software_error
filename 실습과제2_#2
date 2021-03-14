@@ -1,0 +1,23 @@
+basic_cost=12.100
+basic_cost=format(basic_cost,',')
+voice=1.98
+data=55
+voice_time=int(input("음성 통화 시간(초):"))
+data_use=int(input("데이터 사용량(MB):"))
+voice_cost=voice_time*voice
+voice_cost=format(voice_cost,',')
+data_cost=data_use*data
+data_cost=format(data_cost,',')
+print("기본 요금:",basic_cost)
+print("음성 통화 요금:",voice_cost)
+print("데이터 사용 요금:",data_cost)
+print("총 요금:",basic_cost+voice_cost+data_cost)
+
+#이렇게 하면 결과가
+음성 통화 시간(초):12000
+데이터 사용량(MB):250
+12.1
+음성 통화 요금: 23,760.0
+데이터 사용 요금: 13,750.0
+총 요금: 12.123,760.013,750.0
+#이런 식으로... 각 요금이 부동소수점으로 안 나오게/총 요금으 왜 저렇게 나온건지...
